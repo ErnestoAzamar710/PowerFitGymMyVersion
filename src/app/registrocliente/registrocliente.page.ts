@@ -11,5 +11,7 @@ export class RegistroclientePage implements OnInit {
 
   ngOnInit() {
   }
-
+  logout(){
+    window.location.href = '/home'
+  }
 }

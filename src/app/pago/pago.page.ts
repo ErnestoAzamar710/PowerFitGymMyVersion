@@ -14,4 +14,7 @@ export class PagoPage implements OnInit {
   logout(){
     window.location.href = '/home'
   }
+  confirmarpago(){
+    window.location.href = '/confipay'
+  }
 }

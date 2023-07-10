@@ -13,6 +13,8 @@
       <button class="btn btn-primary" [routerLink]="['/registrocliente']">Registro de nuevo cliente</button>
       <p></p>
       <button class="btn btn-primary" [routerLink]="['/pago']">Pago de suscripción</button>
+      <p></p>
+      <button class="btn btn-primary" (click)="logout()">Logout</button>
     </ion-content>
   </ion-menu>
   <div class="ion-page" id="main-content">
@@ -21,44 +23,42 @@
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title class="text-center">Registro de nuevo cliente</ion-title>
+        <ion-title class="text-center">Reigstro de nuevo Usuario</ion-title>
       </ion-toolbar>
     </ion-header>
-  </div>
-  <ion-input type="email" label="Email" label-placement="floating" fill="outline"></ion-input>
-  <br/>
-  <!--Contenido-->
-  <ion-content class="ion-padding">
-    <div class="text-center">
-      <div class="logo">
-        <img src="../../assets/icon/Gym-Logo-Graphics-1-28.jpg" alt="Logo">
-        <h1>POWERFIT GYM</h1>
-      </div>
-      <form class="formLog">
-        <ion-input type="text" label="Nombre completo" label-placement="floating" fill="outline"></ion-input>
-        <br/>
-        <ion-input type="text" label="Numero de Telefono" label-placement="floating" fill="outline"></ion-input>
-        <br/>
-        <ion-input type="email" label="Email" label-placement="floating" fill="outline"></ion-input>
-        <br/>
-        <ion-input type="password" label="Password" label-placement="floating" fill="outline"></ion-input>
-        <br/>
-        <div class="takephoto">
-          <ion-row>
-            <ion-col size="4">
-              <img src="" alt="Foto Usuario">
-            </ion-col>
-            <ion-col>
-              <button class="btn btn-primary"><ion-icon style="font-size: 200%;" name="camera-outline"></ion-icon></button>
-            </ion-col>
-          </ion-row>
+      <!--Contenido-->
+    <ion-content class="ion-padding">
+      <div class="text-center">
+        <div class="logo">
+          <img src="../../assets/icon/Gym-Logo-Graphics-1-28.jpg" alt="Logo">
+          <h1>POWERFIT GYM</h1>
         </div>
-        <p></p>
-        <div class="inico">
-          <button class="btn btn-primary" type="submit">SIGN UP</button>
+        <form class="formLog">
+          <ion-input type="text" label="Nombre completo" label-placement="floating" fill="outline"></ion-input>
+          <br/>
+          <ion-input type="text" label="Numero de Telefono" label-placement="floating" fill="outline"></ion-input>
+          <br/>
+          <ion-input type="email" label="Email" label-placement="floating" fill="outline"></ion-input>
+          <br/>
+          <ion-input type="password" label="Password" label-placement="floating" fill="outline"></ion-input>
+          <br/>
+          <div class="takephoto">
+            <ion-row>
+              <ion-col size="4">
+                <img src="" alt="Foto Usuario">
+              </ion-col>
+              <ion-col>
+                <button class="btn btn-primary"><ion-icon style="font-size: 200%;" name="camera-outline"></ion-icon></button>
+              </ion-col>
+            </ion-row>
+          </div>
           <p></p>
-        </div>
-      </form>
-    </div>
-  </ion-content>
+          <div class="inico">
+            <button class="btn btn-primary" type="submit">SIGN UP</button>
+            <p></p>
+          </div>
+        </form>
+      </div>
+    </ion-content>
+  </div>
 </ion-app>
