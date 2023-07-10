@@ -1,0 +1,29 @@
+<ion-app>
+  <!--Menu-->
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu de Aministración</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <h4>Opciones de administrador</h4>
+      <button class="btn btn-primary" [routerLink]="['/administrador']">Administración de clientes</button>
+      <p></p>
+      <button class="btn btn-primary" [routerLink]="['/registrocliente']">Registro de nuevo cliente</button>
+      <p></p>
+      <button class="btn btn-primary" [routerLink]="['/pago']">Pago de suscripción</button>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="text-center">Pago de suscripción</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+  <!--Contenido-->
+</ion-app>
