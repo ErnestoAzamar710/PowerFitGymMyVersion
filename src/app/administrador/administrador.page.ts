@@ -11,5 +11,7 @@ export class AdministradorPage implements OnInit {
 
   ngOnInit() {
   }
-
+  logout(){
+    window.location.href = '/home'
+  }
 }
