@@ -13,6 +13,8 @@
       <button class="btn btn-primary" [routerLink]="['/registrocliente']">Registro de nuevo cliente</button>
       <p></p>
       <button class="btn btn-primary" [routerLink]="['/pago']">Pago de suscripción</button>
+      <p></p>
+      <button class="btn btn-primary" (click)="logout()">Logout</button>
     </ion-content>
   </ion-menu>
   <div class="ion-page" id="main-content">
@@ -24,10 +26,21 @@
         <ion-title class="text-center">Pago de suscripción</ion-title>
       </ion-toolbar>
     </ion-header>
-    <!--Contenido-->
+      <!--Contenido-->
     <ion-content class="ion-padding">
-      
+      <ion-searchbar animated="true" placeholder="Buscar cliente"></ion-searchbar>
+      <ion-card>
+        <ion-row>
+          <ion-col size="5">
+            <img src="https://64.media.tumblr.com/7b65e8f2b6523c83f51ceed0a9ec895d/de1307c370c652ec-5f/s400x600/0d3087538dec859cf8a998f409fd54db6c67aaea.jpg" alt="Foto Usuario">
+          </ion-col>
+          <ion-col class="text-center">
+            <p style="font-size: 120%;">Person</p>
+            <p>Ultimo dia habil: 10-07-2023</p>
+            <ion-button fill="clear"><ion-icon style="font-size: 200%;" name="cash-outline"></ion-icon></ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
     </ion-content>
   </div>
-  
 </ion-app>

@@ -11,5 +11,7 @@ export class PagoPage implements OnInit {
 
   ngOnInit() {
   }
-
+  logout(){
+    window.location.href = '/home'
+  }
 }
