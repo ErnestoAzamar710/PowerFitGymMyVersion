@@ -27,6 +27,18 @@ const routes: Routes = [
     path: 'pago',
     loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
   },
+  {
+    path: 'generateqr',
+    loadChildren: () => import('./generateqr/generateqr.module').then( m => m.GenerateqrPageModule)
+  },
+  {
+    path: 'editarperfil',
+    loadChildren: () => import('./editarperfil/editarperfil.module').then( m => m.EditarperfilPageModule)
+  },
+  {
+    path: 'gimnasiomovil',
+    loadChildren: () => import('./gimnasiomovil/gimnasiomovil.module').then( m => m.GimnasiomovilPageModule)
+  },
 ];
 
 @NgModule({
