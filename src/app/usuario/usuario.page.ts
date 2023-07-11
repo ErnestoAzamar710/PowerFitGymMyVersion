@@ -11,5 +11,16 @@ export class UsuarioPage implements OnInit {
 
   ngOnInit() {
   }
-
+  logout(){
+    window.location.href = '/home'
+  }
+  editprofile(){
+    window.location.href = '/editarperfil'
+  }
+  gimMovil(){
+    window.location.href = '/gimnasiomovil'
+  }
+  genQR(){
+    window.location.href = '/generateqr'
+  }
 }

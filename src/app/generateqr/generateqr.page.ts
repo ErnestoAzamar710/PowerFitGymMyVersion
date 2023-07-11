@@ -11,5 +11,7 @@ export class GenerateqrPage implements OnInit {
 
   ngOnInit() {
   }
-
+  homeUsu(){
+    window.location.href = '/usuario'
+  }
 }

@@ -1,13 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>usuario</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Perfil de Usuario</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<ion-app>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="text-center">Perfil del Usuario</ion-title>
+      </ion-toolbar>
+    </ion-header>
+      <!--Contenido-->
+    <ion-content class="ion-padding">
+      <ion-card>
+        <ion-row>
+          <ion-col size="5">
+            <img src="https://64.media.tumblr.com/7b65e8f2b6523c83f51ceed0a9ec895d/de1307c370c652ec-5f/s400x600/0d3087538dec859cf8a998f409fd54db6c67aaea.jpg" alt="Foto Usuario">
+          </ion-col>
+          <ion-col>
+            <h3><b>Persona</b></h3>
+            <h4><b>Status</b></h4>
+          </ion-col>
+        </ion-row>
+        <br/>
+        <div class="datosUsu text-center">
+          <h5><b>Email</b></h5>
+          <h5><b>Teléfono</b></h5>
+          <h5><b>Día de ingreso</b></h5>
+          <h5><b>Tipo de plan</b></h5>
+          <h5><b>Ultimo día hábil</b></h5>
+        </div>
+        <ion-row class="text-center">
+          <ion-col>
+            <ion-button (click)="editprofile()"><i style="font-size: 200%;" class="fa-solid fa-pen-to-square"></i></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button><i style="font-size: 200%;" class="fa-solid fa-file-invoice"></i></ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row class="text-center">
+          <ion-col>
+            <ion-button (click)="gimMovil()"><i style="font-size: 200%;" class="fa-solid fa-dumbbell"></i></ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button (click)="genQR()"><i style="font-size: 200%;" class="fa-solid fa-qrcode"></i></ion-button>
+          </ion-col>
+        </ion-row>
+        <div class="text-center">
+          <ion-button (click)="logout()"><i style="font-size: 200%;" class="fa-solid fa-right-from-bracket"></i></ion-button>
+        </div>
+        <p></p>
+      </ion-card>
+    </ion-content>
+  </div>
+</ion-app>

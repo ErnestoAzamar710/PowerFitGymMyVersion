@@ -14,7 +14,15 @@ ion-menu::part(container) {
   width: 100%;
   color: white;
 }
-  
+.timer{
+  background-color: gray;
+  border-radius: 40%;
+  color: white;
+}
+.content-timer{
+  display: inline-flex;
+}
+
 @media (max-width: 600px) {
   .logo img{
     width: 50%;

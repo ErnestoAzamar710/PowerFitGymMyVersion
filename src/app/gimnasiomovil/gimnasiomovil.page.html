@@ -1,13 +1,44 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>gimnasiomovil</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">gimnasiomovil</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<ion-app>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+        <ion-button (click)="homeUsu()"><i style="font-size: 200%;" class="fa-solid fa-house"></i></ion-button>
+        </ion-buttons>
+        <ion-title class="text-center">Gimnasio Movil</ion-title>
+      </ion-toolbar>
+    </ion-header>
+      <!--Contenido-->
+    <ion-content class="ion-padding">
+      <div class="text-center">
+        <div class="logo">
+          <img src="../../assets/icon/Gym-Logo-Graphics-1-28.jpg" alt="Logo">
+        </div>
+        <ion-card>
+          <div class="text-center">
+            <h4><b>Elige un tipo de ejercicio</b></h4>
+            <ion-row>
+              <ion-col>
+                <ion-button (click)="gimMovil()" class="btn">Pecho</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button (click)="gimMovil()" class="btn">Brazo</ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-button (click)="gimMovil()" class="btn">Pierna</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button (click)="gimMovil()" class="btn">Abdomen</ion-button>
+              </ion-col>
+            </ion-row>
+          </div>
+          <p></p>
+          <img src="../../assets/icon/image.png" alt="Ejercicio en casa">
+          <p></p>
+        </ion-card>
+      </div>
+    </ion-content>
+  </div>
+</ion-app>

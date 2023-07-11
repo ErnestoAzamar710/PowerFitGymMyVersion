@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'confipay',
     loadChildren: () => import('./confipay/confipay.module').then( m => m.ConfipayPageModule)
   },
+  {
+    path: 'gim-mov-dis',
+    loadChildren: () => import('./gim-mov-dis/gim-mov-dis.module').then( m => m.GimMovDisPageModule)
+  },
 ];
 
 @NgModule({

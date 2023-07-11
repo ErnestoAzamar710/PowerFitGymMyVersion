@@ -11,5 +11,10 @@ export class GimnasiomovilPage implements OnInit {
 
   ngOnInit() {
   }
-
+  homeUsu(){
+    window.location.href = '/usuario'
+  }
+  gimMovil(){
+    window.location.href = '/gim-mov-dis'
+  }
 }
