@@ -19,4 +19,15 @@ ion-menu::part(container) {
     width: 50%;
     height: 50%;
   }
+
+//Inputs del registro
+  .formLog ion-input{
+    background-color: brown;
+  width: 100%;
+  border-radius: 10px;
+  }
+  .option{
+    
+  }
+
 }

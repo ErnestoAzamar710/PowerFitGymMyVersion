@@ -32,15 +32,14 @@
             <ion-col class="timer">
               <div class="content-timer">
                 <div class="content-m">
-                  <div class="time">{{ minutes | number:'2.0'}} <span>m</span></div>
+                  <div class="time">{{ minutes | number:'2.0'}} <span>:</span></div>
                 </div>
                 <div class="content-s">
-                  <div class="time">{{seconds | number:'2.0'}} <span>s</span></div>
+                  <div class="time">{{seconds | number:'2.0'}}</div>
                 </div>
               </div>
               <div class="content-btn-action">
                 <button type="button" (click)="start()" [disabled]="disabled">&#9658;</button>
-                <button type="button" (click)="stop()">&#9724;</button>
                 <button type="button" (click)="reset()">&#8635;</button>
               </div>
             </ion-col>
@@ -48,6 +47,9 @@
               <ion-button class="btn"><i style="font-size: 120%;" class="fa-solid fa-forward"></i></ion-button>
             </ion-col>
           </ion-row>
+          <p></p>
+          <button class="hola" type="button" (click)="stop()">&#9724;</button>
+          <p></p>
           <p></p>
         </ion-card>
       </div>

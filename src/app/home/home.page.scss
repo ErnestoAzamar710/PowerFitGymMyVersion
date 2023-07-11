@@ -43,12 +43,34 @@
   height: 25%;
  }
 
- @media (max-width: 600px) {
-  .logo img{
-    width: 50%;
-    height: 50%;
-  }
-}
-button{
+ button{
   width: 50%;
+}
+
+//Mrecursividad Celular
+ @media (max-width: 600px) {
+  //Logo
+  .logo img{
+    width: 70%;
+    height: 70%;
+  }
+  //Titulo de los logos
+  
+// partes de los inputs 
+  .put{
+    position: relative;
+
+  }
+  .inputsion{
+    margin: 20px;
+  }
+  .formLog ion-input{
+  width: 100%;
+  border-radius: 10px;
+  }
+
+  //Botones de session
+  button{
+    width: 90%;
+  }
 }
