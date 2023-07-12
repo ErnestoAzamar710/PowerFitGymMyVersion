@@ -13,21 +13,43 @@ ion-menu::part(container) {
 .btn{
   width: 100%;
 }
+//Colores de las paginas
+//Color de los inputs
+ion-input{
+  background-color:#f1d9b0;
+}
+//fobdo del menu 
+ion-toolbar{
+  --ion-background-color:#ff9d29;
+}
+//Fondo de los botones
+ion-content button{
+  background-color:#ff9d29;
+  border-style: none;
+}
+//el emnu del despliegue
+ion-menu ion-content {
+  --ion-background-color: #f1d9b0;
+}
   
 @media (max-width: 600px) {
+
+.btn{
+  width: 100%;
+}
   .logo img{
     width: 50%;
     height: 50%;
   }
-
 //Inputs del registro
   .formLog ion-input{
-    background-color: brown;
   width: 100%;
   border-radius: 10px;
   }
-  .option{
-    
-  }
+
+//Escalada de botones 
+ion-col button{
+  width: 40%;
+}
 
 }
