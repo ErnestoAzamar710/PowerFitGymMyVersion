@@ -13,7 +13,22 @@ ion-menu::part(container) {
 .btn{
   width: 100%;
 }
-  
+//Colores de las paginas
+//Color de los inputs
+ion-input{
+  background-color:#f1d9b0;
+}
+//fobdo del menu 
+ion-toolbar{
+  --ion-background-color:#ff9d29;
+}
+//Fondo de los botones
+ion-content button{
+  background-color:#ff9d29;
+  border-style: none;
+}  
+
+
 @media (max-width: 600px) {
   .logo img{
     width: 50%;
@@ -22,4 +37,9 @@ ion-menu::part(container) {
   .option ion-input{
     width: 99%;
   }
+
+  //Escalada de botones 
+ion-col button{
+  width: 40%;
+}
 }

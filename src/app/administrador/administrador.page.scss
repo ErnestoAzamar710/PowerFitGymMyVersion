@@ -31,7 +31,10 @@ ion-searchbar{
 ion-icon{
     color: black;
 }
-
+//fondo de las targetas
+ion-card{
+    --ion-background-color: #f1d9b0;
+  }
 ion-title{
     color: black;
 }

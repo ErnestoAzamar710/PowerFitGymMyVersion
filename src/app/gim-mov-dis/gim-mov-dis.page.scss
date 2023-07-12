@@ -25,6 +25,23 @@ ion-menu::part(container) {
   display: inline-flex;
 }
 
+
+//Colores de las paginas
+//Color de los inputs
+ion-card{
+  background-color:#f1d9b0;
+}
+//fobdo del menu 
+ion-toolbar{
+  --ion-background-color:#ff9d29;
+}
+//Fondo de los botones
+ion-button{
+  --background:#ff9d29;
+  border-style: none;
+}
+
+
 @media (max-width: 600px) {
   ion-menu::part(backdrop) {
     background-color: rgba(24, 21, 24, 0.5);

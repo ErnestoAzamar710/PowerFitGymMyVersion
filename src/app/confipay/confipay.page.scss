@@ -16,12 +16,38 @@ ion-menu::part(container) {
     width: 20%;
 }
 
+//color de fondo
+//color de fondo de la targeta
+ion-card{
+    background: #f1d9b0;
+}
+//Color de la cantidad de precio
+ion-input{
+    background-color: white;
+}
+//color de fondo
+ion-select{
+    background-color: white;
+}
 @media (max-width: 600px) {
     .logo img{
       width: 50%;
       height: 50%;
     }
-  
+//fondo de la targeta
+button{
+    background-color:#ff9d29 ;
+    border-style: none;
+  }
+//color de fondo del menu
+  ion-toolbar{
+    --ion-background-color:#ff9d29;
+}
+//Fondo del menu del despliegue
+ion-menu ion-content {
+    --ion-background-color: #f1d9b0;
+  }
+
   //Metodo de pago
     .option ion-select{
         width: 95%;

@@ -15,6 +15,23 @@ ion-menu::part(container) {
   color: white;
 }
   
+
+
+//Colores de las paginas
+//Color de los inputs
+ion-card{
+  background-color:#f1d9b0;
+}
+//fobdo del menu 
+ion-toolbar{
+  --ion-background-color:#ff9d29;
+}
+//Fondo de los botones
+ion-button{
+  --background:#ff9d29;
+  border-style: none;
+}
+
 @media (max-width: 600px) {
   .logo img{
     width: 50%;
