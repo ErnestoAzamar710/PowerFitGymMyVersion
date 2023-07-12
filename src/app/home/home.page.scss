@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "GYM";
+  src: url(/src/font/ArcadeClassic.ttf);
+}
 
  .logo img{
   width: 25%;
@@ -11,6 +15,11 @@
 
 .formLog ion-input{
   background-color: #f1d9b0;
+}
+
+//titulo
+h1{
+  font-family: "GYM";
 }
 
 
