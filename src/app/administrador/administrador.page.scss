@@ -15,3 +15,27 @@ ion-menu::part(container) {
 .actions{
     width: 20%;
 }
+ion-menu ion-content {
+    --ion-background-color: #f1d9b0;
+  }
+  ion-content button{
+    background-color:#ff9d29 ;
+    border-style: none;
+  }
+ion-toolbar{
+    --ion-background-color:#ff9d29;
+}
+ion-searchbar{
+    --ion-background-color: #f1d9b0;
+}
+ion-icon{
+    color: black;
+}
+
+ion-title{
+    color: black;
+}
+//Modo celular
+@media (max-width: 600px){
+    
+}
