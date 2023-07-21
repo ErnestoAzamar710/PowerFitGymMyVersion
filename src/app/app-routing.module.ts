@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'gim-mov-dis',
     loadChildren: () => import('./gim-mov-dis/gim-mov-dis.module').then( m => m.GimMovDisPageModule)
   },
+  {
+    path: 'perfiluser',
+    loadChildren: () => import('./perfiluser/perfiluser.module').then( m => m.PerfiluserPageModule)
+  },
 ];
 
 @NgModule({

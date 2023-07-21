@@ -5,49 +5,32 @@
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title class="text-center">Perfil del Usuario</ion-title>
+        <ion-title class="text-center">Menu</ion-title>
       </ion-toolbar>
     </ion-header>
       <!--Contenido-->
     <ion-content class="ion-padding">
       <ion-card>
-        <ion-row>
-          <ion-col size="5">
-            <img src="https://assets.stickpng.com/images/585e4bd7cb11b227491c3397.png" alt="Foto Usuario">
-          </ion-col>
-          <ion-col>
-            <h3><b>Nombre</b></h3>
-            <h4><b>Status</b></h4>
-          </ion-col>
-        </ion-row>
-        <br/>
-        <div class="datosUsu text-center">
-          <h5><b>Email</b></h5>
-          <h5><b>Teléfono</b></h5>
-          <h5><b>Día de ingreso</b></h5>
-          <h5><b>Tipo de plan</b></h5>
-          <h5><b>Ultimo día hábil</b></h5>
-        </div>
         <ion-row class="text-center">
           <ion-col>
-            <ion-button (click)="editprofile()"><i style="font-size: 200%;" class="fa-solid fa-pen-to-square"></i></ion-button>
+            <ion-button class="circular-button" (click)="users()"><i style="font-size: 300%;" class="fa-solid fa-user"></i></ion-button>
+            <h4>Perfil del <br>Usuario</h4>
           </ion-col>
           <ion-col>
-            <ion-button><i style="font-size: 200%;" class="fa-solid fa-file-invoice"></i></ion-button>
+            <ion-button class="circular-button"><i style="font-size: 300%;" class="fa-solid fa-file-invoice"></i></ion-button>
+            <h4>Generar <br>PDF</h4>
           </ion-col>
         </ion-row>
         <ion-row class="text-center">
           <ion-col>
-            <ion-button (click)="gimMovil()"><i style="font-size: 200%;" class="fa-solid fa-dumbbell"></i></ion-button>
+            <ion-button class="circular-button" (click)="gimMovil()"><i style="font-size: 300%;" class="fa-solid fa-dumbbell"></i></ion-button>
+            <h4>GYM en<br>Casa</h4>
           </ion-col>
           <ion-col>
-            <ion-button (click)="genQR()"><i style="font-size: 200%;" class="fa-solid fa-qrcode"></i></ion-button>
+            <ion-button class="circular-button" (click)="genQR()"><i style="font-size: 300%;" class="fa-solid fa-qrcode"></i></ion-button>
+            <h4>Generar<br>QR</h4>
           </ion-col>
         </ion-row>
-        <div class="text-center">
-          <ion-button (click)="logout()"><i style="font-size: 200%;" class="fa-solid fa-right-from-bracket"></i></ion-button>
-        </div>
-        <p></p>
       </ion-card>
     </ion-content>
   </div>

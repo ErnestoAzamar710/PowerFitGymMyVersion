@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-usuario',
-  templateUrl: './usuario.page.html',
-  styleUrls: ['./usuario.page.scss'],
+  selector: 'app-perfiluser',
+  templateUrl: './perfiluser.page.html',
+  styleUrls: ['./perfiluser.page.scss'],
 })
-export class UsuarioPage implements OnInit {
+export class PerfiluserPage implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
   }
+
   logout(){
     window.location.href = '/home'
   }
@@ -23,7 +24,5 @@ export class UsuarioPage implements OnInit {
   genQR(){
     window.location.href = '/generateqr'
   }
-  users(){
-    window.location.href = '/perfiluser'
-  }
+
 }
