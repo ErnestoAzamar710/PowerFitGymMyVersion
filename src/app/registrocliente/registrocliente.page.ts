@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PhotosService } from '../services/photos.service';
 
 @Component({
   selector: 'app-registrocliente',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroclientePage implements OnInit {
 
-  constructor() { }
+  photos: String[]=[];
+  constructor(public photoservices:PhotosService) {
+    this.photos = this.photoservices.photos;
+  }
+
+  addPhotoToGallery() {
+    this.photoservices.addNewToGallery();
+  }
 
   ngOnInit() {
   }

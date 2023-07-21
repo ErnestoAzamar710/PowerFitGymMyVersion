@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenerateqrPage implements OnInit {
 
-  constructor() { }
+  public myAngularxQrCode: string = "";
+  constructor() {
+    this.myAngularxQrCode = 'Hola mundo';
+  }
 
   ngOnInit() {
-  }
-  homeUsu(){
-    window.location.href = '/usuario'
   }
 }

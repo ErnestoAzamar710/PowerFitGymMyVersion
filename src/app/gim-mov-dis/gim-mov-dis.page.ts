@@ -88,7 +88,4 @@ export class GimMovDisPage implements OnInit {
     this.seconds = 0;
     this.stop();
   }
-  homeUsu(){
-    window.location.href = '/usuario'
-  }
 }

@@ -48,10 +48,10 @@
           <div class="takephoto">
             <ion-row>
               <ion-col size="4">
-                <img src="" alt="Foto Usuario">
+                <img [src]="capturedPhoto" *ngFor="let capturedPhoto of photos" alt="Foto Usuario">
               </ion-col>
               <ion-col>
-                <button class="btn btn-primary"><ion-icon style="font-size: 200%;" name="camera-outline"></ion-icon></button>
+                <button class="btn btn-primary" (click)="addPhotoToGallery()"><ion-icon style="font-size: 200%;" name="camera-outline"></ion-icon></button>
               </ion-col>
             </ion-row>
           </div>

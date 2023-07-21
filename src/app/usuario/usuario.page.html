@@ -13,7 +13,7 @@
       <ion-card>
         <ion-row class="text-center">
           <ion-col>
-            <ion-button class="circular-button" (click)="users()"><i style="font-size: 300%;" class="fa-solid fa-user"></i></ion-button>
+              <ion-button class="circular-button" [routerLink]="['/perfiluser']"><i style="font-size: 300%;" class="fa-solid fa-user"></i><</ion-button>
             <h4>Perfil del <br>Usuario</h4>
           </ion-col>
           <ion-col>
@@ -23,11 +23,11 @@
         </ion-row>
         <ion-row class="text-center">
           <ion-col>
-            <ion-button class="circular-button" (click)="gimMovil()"><i style="font-size: 300%;" class="fa-solid fa-dumbbell"></i></ion-button>
+            <ion-button class="circular-button" [routerLink]="['/gimnasiomovil']"><i style="font-size: 300%;" class="fa-solid fa-dumbbell"></i></ion-button>
             <h4>GYM en<br>Casa</h4>
           </ion-col>
           <ion-col>
-            <ion-button class="circular-button" (click)="genQR()"><i style="font-size: 300%;" class="fa-solid fa-qrcode"></i></ion-button>
+            <ion-button class="circular-button" [routerLink]="['/generateqr']"><i style="font-size: 300%;" class="fa-solid fa-qrcode"></i></ion-button>
             <h4>Generar<br>QR</h4>
           </ion-col>
         </ion-row>
